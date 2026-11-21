@@ -1,119 +1,142 @@
-# Rounds for Codex
+<p align="center">
+  <img src="docs/rounds-mark.svg" width="72" alt="">
+</p>
 
-A local browser canvas of your Codex work on macOS. Screens, HTML pages, before and after comparisons, file changes, and notes linked to the chat that made them.
+<h1 align="center">Rounds for Codex</h1>
 
-This is an independent port of [Rounds](https://github.com/krispuckett/rounds), based on commit `9b863e289f30c676b35379be5de2859f5858a273`. The original repository and Claude integration are unchanged. The MIT license and original canvas design are retained.
+<p align="center">Everything your Codex sessions make, on one canvas.</p>
 
-## Get started
+[![The Rounds canvas](docs/rounds-og.png)](docs/rounds-film.mp4)
 
-Requires macOS, [Node.js](https://nodejs.org/) 20 or newer, and a current version of Codex with the `codex` command available in your terminal. Chrome or another Chromium browser enables HTML page previews. Optional: `brew install zstd` to import compressed older Codex sessions.
+<p align="center"><a href="docs/rounds-film.mp4">Watch the film</a></p>
 
-```sh
-npx github:krispuckett/rounds-codex#v0.1.0 init
+I run a lot of Codex sessions at once and kept losing track of what each one made. Now it
+all lands in one place, and I can leave notes on it.
+
+## Try it
+
+```bash
+npx github:krispuckett/rounds-codex --demo
 ```
 
-Confirm installation, then review and trust the hooks in Codex **Settings > Hooks** (or `/hooks` in the CLI). Reopen chats to load the MCP server and skill.
+The demo is six of my public projects and the real notes I left on them. It runs in its own
+folder and doesn't touch your setup.
 
-Start the canvas:
+## What it does
 
-```sh
-node ~/.rounds-codex/app/bin/rounds-codex.mjs
+Screens, pages and pushes from every session, sorted by project.
+
+![The Road, one of the projects on the canvas](docs/canvas-project.jpg)
+
+Pin a note on a screen. Send your next message to the chat that made it, and Codex gets the
+note, makes the fix and replies.
+
+![A note on a screen, with the session's reply](docs/canvas-note.jpg)
+
+Drag to compare a screen with the one it replaced.
+
+![A sky before and after a fix](docs/canvas-compare.jpg)
+
+Step back to any day to see what was made on it.
+
+![Earlier days stacked behind the current one](docs/canvas-time.jpg)
+
+Search a session by name, or tap a group's title in the timeline, to see only that session's
+work, newest first.
+
+The files a session changed sit on a sheet beside its screens. Open one to read every change
+line by line, and to see which other sessions changed it too.
+
+Captured work stays on your canvas even after its chat or original files are gone. Posted
+HTML pages are saved as snapshots; their external assets are not bundled.
+
+## Set it up
+
+You need a Mac, Node 20 or newer, and Codex with the `codex` command available in your terminal.
+Rounds reads the sessions that run on your Mac; sessions in the cloud don't reach it.
+
+```bash
+npx github:krispuckett/rounds-codex init
 ```
 
-Your browser opens [localhost:4798](http://localhost:4798). Keep the terminal running while using the canvas; press Ctrl+C to stop it. It does not start automatically at login.
+This asks before installing an MCP server, a skill and four hooks in Codex, and backs up your
+existing settings. Review and trust the hooks in **Settings > Hooks** (or `/hooks` in the CLI),
+then reopen your chats. Open the canvas:
 
-The first launch imports saved local Codex history in the background. Large histories can take a few minutes. Subsequent launches reuse a per-session cache, and the terminal reports import progress.
-
-Want to try it before connecting Codex? This uses public sample work in a separate demo folder and does not install hooks:
-
-```sh
-npx github:krispuckett/rounds-codex#v0.1.0 --demo
+```bash
+npx github:krispuckett/rounds-codex
 ```
 
-## Use the canvas
+The canvas opens at [localhost:4798](http://localhost:4798). Keep the terminal running while
+using it. The first launch imports your local history in the background.
 
-- Ask Codex to post finished visual work to Rounds. The installed skill uses `rounds_post` for screenshots and HTML, and `rounds_change` for pushed changes.
-- Browse work by project and chat. Open a screen to inspect it, compare versions, or pin a note.
-- Click through to the owning Codex chat and send a message. Pending notes are delivered to that chat, and Codex can reply on the canvas.
+To update the Codex integration, stop the canvas, run `init` again, and reopen your chats. Your
+saved work and notes stay in place.
 
-A pin is delivered on your next message to its chat. It does not wake an idle chat. You can also ask Codex to check `rounds_notes`. Each MCP call includes an explicit `session_id`, so concurrent chats in one project remain separate.
+To take it all out:
 
-## What installation changes
-
-Preview the exact changes, then install:
-
-```sh
-npx github:krispuckett/rounds-codex#v0.1.0 init --dry-run
+```bash
+npx github:krispuckett/rounds-codex uninstall
 ```
 
-Installation keeps a complete runtime in `~/.rounds-codex/app`, registers the `rounds-codex` MCP server, installs the `rounds-codex` skill, and adds four lifecycle hooks. Clearing npm's download cache will not break the installation. Existing Codex hooks are preserved, with timestamped backups of existing hooks and config files. It does not add Git hooks or write to the original Rounds project or Claude configuration.
+## Privacy
 
-Hook trust is handled by Codex and is never granted by this installer.
+Everything stays in `~/.rounds-codex` on your Mac. The canvas listens only on your own machine.
+Topic grouping uses post topics and chat names locally, without background model calls.
 
-- `SessionStart` supplies the chat ID and working directory.
-- `PostToolUse` recognizes successful pushes and asks Codex to record them.
-- `Stop` captures completed work from the local session into the canvas cache.
-- `UserPromptSubmit` delivers pending notes only to the chat that owns the work.
+<details>
+<summary>More</summary>
 
-To update, stop the canvas and run `init` with the newer release tag, then start it again. Saved work and notes are retained. If you move or replace your Node installation, rerun `init` so the hooks use its current path.
+### Tools
 
-## What gets captured
+Sessions post with `rounds_post` and `rounds_change`, read notes with `rounds_notes` and answer
+them with `rounds_reply`. The hooks give each chat its identity, bring it notes with your next
+message, capture completed work, and notice successful pushes.
 
-The `rounds_post` tool saves screenshots or an HTML file immediately. `rounds_change` records a pushed change. Images and HTML snapshots are copied into Rounds storage when posted, with before images and page versions preserved. `rounds_notes` and `rounds_reply` complete the feedback loop.
+[Setup, storage, history import, and troubleshooting](docs/SETUP.md).
 
-History import reads local Codex rollout files, including archived sessions and `.jsonl.zst` files when `zstd` is installed. It captures image embeds and local HTML links from assistant messages, and file-change events with their recorded diffs. Missing source files cannot be recovered from a path alone. Remote/cloud-only work is not imported. HTML is preserved as a file snapshot; external scripts, styles, and assets are not bundled.
+### Keys
 
-The rollout format is an internal Codex format and may change. Live MCP posts and explicit chat identity do not depend on parsing it. Current parsing supports completed-item events and assistant-message records observed in Codex 0.166.
+| Key | Does |
+| --- | --- |
+| T | Timeline |
+| ← → | Back or forward through the days with work |
+| / or ⌘K | Search |
+| + − 0 | Zoom in, zoom out, fit everything |
+| Space | Hold to pan, or to see the before while comparing |
+| Esc | Back out |
 
-Topic grouping uses explicit post topics or chat titles. It runs locally without background model calls.
+Scroll pans and pinch zooms, in the timeline too; scrolling over its rail moves through
+the days. Drop an image or an HTML file on the canvas to add it to a project.
 
-## Storage and configuration
+### Config
 
-All canvas data lives in `~/.rounds-codex`. The demo uses `~/.rounds-codex-demo`. Codex sessions are read from `CODEX_HOME`, or `~/.codex` by default. The server binds only to the loopback interface; it does not upload your history or work to a Rounds service.
-
-Optional `~/.rounds-codex/config.json`:
+`~/.rounds-codex/config.json`, every field optional:
 
 ```json
 {
   "projects": [{ "key": "shop", "name": "Shop", "match": ["shop", "storefront"] }],
-  "private": ["internal-project"],
+  "private": ["acme-internal"],
   "port": 4798
 }
 ```
 
-Private rules hide matching work from the canvas. Previously stored snapshots are retained on disk. Environment overrides: `ROUNDS_CODEX_HOME`, `ROUNDS_CODEX_SOURCE` (read-only session input), `ROUNDS_CODEX_PORT`, and `ROUNDS_CODEX_BROWSER`. `ROUNDS_CODEX_BROWSER=none` disables browser previews. Original Rounds environment variables are ignored.
+`projects` groups work by words in its session, folder or caption. Anything matching `private`
+never shows up. `ROUNDS_CODEX_HOME` and `ROUNDS_CODEX_PORT` override the folder and the port.
 
-Useful commands after installation:
+### Develop
 
-```sh
-node ~/.rounds-codex/app/bin/rounds-codex.mjs --no-open   # serve without opening a browser
-node ~/.rounds-codex/app/bin/rounds-codex.mjs --no-index  # use already imported history
-node ~/.rounds-codex/app/bin/rounds-codex.mjs index       # refresh all local history
-```
-
-## Remove integration
-
-```sh
-node ~/.rounds-codex/app/bin/rounds-codex.mjs uninstall
-```
-
-This removes this port's MCP registration, skill, and hooks. It preserves unrelated Codex configuration, the local runtime, and your canvas data.
-
-## Develop and verify
-
-```sh
-git clone https://github.com/krispuckett/rounds-codex.git
-cd rounds-codex
-npm ci                       # installs dependencies and builds the canvas
-npm start
-npm run dev                  # localhost:4798
+```bash
+npm ci
+npm run dev     # the canvas, on :4798
 npm run check
-npm test
-npm run build
+npm test        # the integration loop, in temporary directories
 ```
 
-Run either the built server or the development server on port 4798 at one time. Tests require `zstd` and a built canvas (`npm ci` builds it automatically).
+</details>
 
-Integration tests use temporary Codex and data directories. They exercise MCP posting, HTTP pinning, chat isolation, one-time note delivery, replies, page versions, history retention, file diffs, origin checks, install/uninstall preservation, and operation after npm cache deletion. CI runs on macOS with Node 20 and 22. No live model calls are needed.
+## License
 
-Integration references: [Codex hooks](https://learn.chatgpt.com/docs/hooks), [Codex deep links](https://learn.chatgpt.com/docs/reference/commands).
+A separate port of [Rounds](https://github.com/krispuckett/rounds).
+
+MIT. Made by [Kris Puckett](https://krispuckett.com).
