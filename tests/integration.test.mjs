@@ -72,6 +72,8 @@ test('installation preserves unrelated hooks and uninstall keeps canvas data',()
  writeJSON(path.join(source,'hooks.json'),original);fs.writeFileSync(path.join(source,'config.toml'),'model = "existing-model"\n');
  const commands=[];install({codexRoot:source,runCodex:args=>commands.push(args),log:()=>{}});
  assert.equal(commands[0][2],'rounds-codex');assert.ok(fs.existsSync(path.join(source,'skills','rounds-codex','SKILL.md')));
+ assert.equal(commands[0].at(-2),path.join(data,'app','bin','rounds-codex.mjs'));
+ assert.ok(readJSON(path.join(source,'hooks.json')).hooks.SessionStart[0].hooks[0].command.includes(path.join(data,'app','bin','rounds-codex.mjs')));
  assert.ok(fs.readdirSync(source).some(f=>f.startsWith('hooks.json.before-rounds-codex')));
  uninstall({codexRoot:source,runCodex:args=>commands.push(args),log:()=>{}});
  assert.deepEqual(readJSON(path.join(source,'hooks.json')),original);assert.ok(fs.existsSync(path.join(data,'posts')));

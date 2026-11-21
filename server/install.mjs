@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { DATA, CODEX } from './config.mjs';
 import { readJSON, writeJSON } from './storage.mjs';
+import { APP, keepRuntime } from './runtime.mjs';
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const quote=value=>`'${value.replace(/'/g,"'\\''")}'`;
 const marker='rounds-codex.mjs';
@@ -31,16 +32,17 @@ function existingHooks(file){
  return value;
 }
 export function install({dryRun=false,codexRoot=CODEX,runCodex=null,log=console.log}={}){
- const file=path.join(codexRoot,'hooks.json'),settings=configuredHooks(existingHooks(file));
- const args=['mcp','add','rounds-codex','--env',`ROUNDS_CODEX_HOME=${DATA}`,'--',process.execPath,path.join(ROOT,'bin','rounds-codex.mjs'),'mcp'];
+ const file=path.join(codexRoot,'hooks.json'),settings=configuredHooks(existingHooks(file),APP);
+ const args=['mcp','add','rounds-codex','--env',`ROUNDS_CODEX_HOME=${DATA}`,'--',process.execPath,path.join(APP,'bin','rounds-codex.mjs'),'mcp'];
  const skill=path.join(codexRoot,'skills','rounds-codex');
- if(dryRun){log(JSON.stringify({mcpCommand:['codex',...args],hooksFile:file,hooks:settings,skillDirectory:skill,dataDirectory:DATA},null,2));return;}
+ if(dryRun){log(JSON.stringify({mcpCommand:['codex',...args],hooksFile:file,hooks:settings,skillDirectory:skill,dataDirectory:DATA,appDirectory:APP},null,2));return;}
  if(codexRoot!==path.resolve(process.env.CODEX_HOME||path.join(process.env.HOME,'.codex')) && !runCodex)throw new Error('A custom source directory is for isolated indexing. Use init --dry-run to preview installation.');
+ keepRuntime();
  fs.mkdirSync(codexRoot,{recursive:true});
  if(fs.existsSync(file))fs.copyFileSync(file,`${file}.before-rounds-codex-${Date.now()}`);
  const config=path.join(codexRoot,'config.toml');if(fs.existsSync(config))fs.copyFileSync(config,`${config}.before-rounds-codex-${Date.now()}`);
  (runCodex||(args=>execFileSync('codex',args,{stdio:'inherit'})))(args);
- fs.mkdirSync(skill,{recursive:true});fs.copyFileSync(path.join(ROOT,'skill','rounds-codex','SKILL.md'),path.join(skill,'SKILL.md'));
+ fs.mkdirSync(skill,{recursive:true});fs.copyFileSync(path.join(APP,'skill','rounds-codex','SKILL.md'),path.join(skill,'SKILL.md'));
  writeJSON(file,settings);
  log('Installed Rounds for Codex. Review and trust its hooks in Codex Settings > Hooks (or /hooks in the CLI), then reopen chats to load the MCP server and skill.');
 }

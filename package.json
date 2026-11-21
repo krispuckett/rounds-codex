@@ -4,6 +4,14 @@
   "description": "A local canvas of your Codex work on macOS.",
   "license": "MIT",
   "author": "Kris Puckett",
+  "homepage": "https://github.com/krispuckett/rounds-codex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krispuckett/rounds-codex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krispuckett/rounds-codex/issues"
+  },
   "keywords": [
     "codex",
     "mcp",

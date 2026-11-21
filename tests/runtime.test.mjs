@@ -1,0 +1,65 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { spawn, spawnSync } from 'node:child_process';
+import { once } from 'node:events';
+import net from 'node:net';
+import { keepRuntime } from '../server/runtime.mjs';
+
+test('installed runtime survives deletion of its temporary download', async t => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'rounds-codex-runtime-'));
+  t.after(() => fs.rmSync(temp, { recursive: true, force: true }));
+  const download = path.join(temp, 'npm-cache');
+  const installed = path.join(temp, 'data', 'app');
+  keepRuntime({ destination: download });
+  keepRuntime({ source: download, destination: installed });
+  fs.rmSync(download, { recursive: true });
+  const cli = path.join(installed, 'bin', 'rounds-codex.mjs');
+  const env = { ...process.env, ROUNDS_CODEX_HOME: path.join(temp, 'data'), ROUNDS_CODEX_SOURCE: path.join(temp, 'codex'), ROUNDS_CODEX_BROWSER: 'none' };
+  const request = { jsonrpc: '2.0', id: 1, method: 'tools/list' };
+  const mcp = spawnSync(process.execPath, [cli, 'mcp'], { env, input: JSON.stringify(request) + '\n', encoding: 'utf8' });
+  assert.equal(mcp.status, 0, mcp.stderr);
+  assert.equal(JSON.parse(mcp.stdout).result.tools.length, 4);
+  const hook = spawnSync(process.execPath, [cli, 'hook', 'session'], { env, input: JSON.stringify({ session_id: 'test-chat', cwd: temp }), encoding: 'utf8' });
+  assert.equal(hook.status, 0, hook.stderr);
+  assert.match(JSON.parse(hook.stdout).hookSpecificOutput.additionalContext, /test-chat/);
+  const browser = spawnSync(process.execPath, ['--input-type=module', '-e', "import { chromium } from 'playwright-core'; if (!chromium) process.exit(1)"], { cwd: installed, encoding: 'utf8' });
+  assert.equal(browser.status, 0, browser.stderr);
+  const listener = net.createServer().listen(0, '127.0.0.1');
+  await once(listener, 'listening');
+  const port = listener.address().port;
+  await new Promise(resolve => listener.close(resolve));
+  const server = spawn(process.execPath, [cli, 'start', '--no-open', '--no-index'], { env: { ...env, ROUNDS_CODEX_PORT: String(port) }, stdio: ['ignore', 'pipe', 'pipe'] });
+  const exited = once(server, 'exit');
+  t.after(async () => { if (server.exitCode === null) server.kill(); await exited; });
+  let output = '';
+  server.stderr.on('data', chunk => { output += chunk; });
+  await new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error(`Server startup timed out: ${output}`)), 10000);
+    server.stdout.on('data', chunk => { output += chunk; if (output.includes('Rounds for Codex is open')) { clearTimeout(timer); resolve(); } });
+    server.once('exit', () => { clearTimeout(timer); reject(new Error(output)); });
+    server.once('error', error => { clearTimeout(timer); reject(error); });
+  });
+  const response = await fetch(`http://127.0.0.1:${port}`);
+  assert.equal(response.status, 200);
+  assert.match(await response.text(), /<title>Rounds for Codex<\/title>/);
+});
+
+test('runtime updates preserve canvas data and refuse unrelated folders', t => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'rounds-codex-update-'));
+  t.after(() => fs.rmSync(temp, { recursive: true, force: true }));
+  const destination = path.join(temp, 'app');
+  fs.writeFileSync(path.join(temp, 'notes.json'), '[{"text":"Keep this"}]');
+  keepRuntime({ destination });
+  fs.writeFileSync(path.join(destination, 'old-runtime-file'), 'obsolete');
+  keepRuntime({ destination });
+  assert.ok(!fs.existsSync(path.join(destination, 'old-runtime-file')));
+  assert.equal(fs.readFileSync(path.join(temp, 'notes.json'), 'utf8'), '[{"text":"Keep this"}]');
+  const unrelated = path.join(temp, 'unrelated');
+  fs.mkdirSync(unrelated);
+  fs.writeFileSync(path.join(unrelated, 'keep'), 'unrelated');
+  assert.throws(() => keepRuntime({ destination: unrelated }), /unrelated folder/);
+  assert.equal(fs.readFileSync(path.join(unrelated, 'keep'), 'utf8'), 'unrelated');
+});
