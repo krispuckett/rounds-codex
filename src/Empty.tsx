@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Glyph } from "./glyphs";
 
-const DEMO = "npx github:krispuckett/rounds --demo";
+const DEMO = "npm start -- --demo";
 
 // A canvas with nothing on it yet: where work comes from, the pushes it can bring in from the
 // last 30 days (server/history.mjs), and how to see it full.
@@ -35,7 +35,7 @@ export function Empty({ onImported }: { onImported: () => void }) {
       <div className="flex max-w-[440px] flex-col items-center px-6 text-center" style={{ animation: "wb-empty 500ms var(--ease-out) both" }}>
         <div className="text-[30px] font-semibold tracking-[-0.02em] text-[var(--ink)]">Nothing here yet</div>
         <p className="mt-3 text-[15px] leading-[1.5] text-[var(--muted)]">
-          When a Claude session shows you a screen, publishes a page or pushes to main, it lands here, under its project.
+          When a Codex chat posts a screen, a page or a change, it lands here, under its project.
         </p>
         {found > 0 && (
           <button

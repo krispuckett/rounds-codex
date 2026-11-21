@@ -46,5 +46,6 @@
   "private": [],
   "folders": false,
   "home": "Home",
-  "port": 4795
+  "port": 4798,
+  "relay": false
 }

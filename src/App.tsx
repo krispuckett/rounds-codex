@@ -496,7 +496,7 @@ export default function App() {
     setChat(id);
     if (!find) setAsOf(null);
   };
-  // In the timeline a group's title shows its session; elsewhere it opens the thread in Claude,
+  // In the timeline a group's title shows its session; elsewhere it opens the thread in Codex,
   // when the thread is still on this Mac.
   const titleClick = (g: Group) => {
     if (!g.thread || (!timeShown && !g.gone)) return false;

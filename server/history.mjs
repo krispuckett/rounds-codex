@@ -1,5 +1,5 @@
 // A first launch on an empty canvas can bring in the pushes to main from the last 30 days, in
-// every repo a Claude session worked in. Nothing leaves the machine: the folders come from the
+// every repo a Codex session worked in. Nothing leaves the machine: the folders come from the
 // sessions' own records, the pushes from git's log of the remote branch (each `git push`
 // leaves a dated entry there). Each becomes a push record, the same as the git hook writes.
 import fs from "node:fs";

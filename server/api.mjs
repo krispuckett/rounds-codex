@@ -11,6 +11,7 @@ import { buildIndex, keepImage, hasSips, which, DATA, STORE, IMG } from "./index
 import { pastPushes, importPushes } from "./history.mjs";
 import { applyMoves, fileTopics, filePostTopics, loadTopics } from "./topics.mjs";
 import { POSTS, projects, loadConfig } from "./config.mjs";
+import { updateJSON } from "./storage.mjs";
 
 const SHOTS = path.join(DATA, "shots");
 const SIZED = path.join(DATA, "sized");
@@ -22,18 +23,18 @@ const ADDED = path.join(DATA, "added.json");
 const DROPS = path.join(DATA, "drops");
 for (const d of [SHOTS, INBOX, SENT, STORE, IMG, SIZED, DROPS]) fs.mkdirSync(d, { recursive: true });
 
-const PORT = process.env.ROUNDS_PORT || process.env.WORKBENCH_PORT || loadConfig().port || 4797;
+const PORT = loadConfig().port;
 
 // Page previews (thumbnails and full shots) are drawn by a Chromium browser, found once: the one
-// the environment names (ROUNDS_BROWSER=none turns previews off), else the usual places. With
+// the environment names (ROUNDS_CODEX_BROWSER=none turns previews off), else the usual places. With
 // none, pages still open live in the viewer; only their previews go.
 const MAC_BROWSERS = ["Google Chrome", "Google Chrome Canary", "Chromium", "Microsoft Edge", "Brave Browser"];
 const PATH_BROWSERS = ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "microsoft-edge", "microsoft-edge-stable", "brave-browser", "brave"];
 const runnable = (f) => { try { fs.accessSync(f, fs.constants.X_OK); return fs.statSync(f).isFile(); } catch { return false; } };
-const NO_BROWSER = "No Chrome found, so page previews are off. Set ROUNDS_BROWSER to a Chromium browser to turn them on.";
+const NO_BROWSER = "No Chrome found, so page previews are off. Set ROUNDS_CODEX_BROWSER to a Chromium browser to turn them on.";
 function findBrowser() {
-  const tried = new Set(); // config.mjs sets ROUNDS_ and WORKBENCH_ alike: each value once
-  for (const key of ["ROUNDS_BROWSER", "WORKBENCH_BROWSER", "CHROME_PATH"]) {
+  const tried = new Set();
+  for (const key of ["ROUNDS_CODEX_BROWSER", "CHROME_PATH"]) {
     const v = process.env[key]?.trim();
     if (!v || tried.has(v)) continue;
     tried.add(v);
@@ -68,7 +69,7 @@ async function chrome() {
       browser = await chromium.launch({ executablePath: browserPath, args: ["--hide-scrollbars"], handleSIGTERM: false, handleSIGINT: false, handleSIGHUP: false });
       return browser;
     } catch (e) {
-      console.log(`[rounds] ${browserPath} didn't start (${String(e?.message || e).split("\n")[0]}), so page previews are off. Set ROUNDS_BROWSER to a Chromium browser to turn them on.`);
+      console.log(`[rounds] ${browserPath} didn't start (${String(e?.message || e).split("\n")[0]}), so page previews are off. Set ROUNDS_CODEX_BROWSER to a Chromium browser to turn them on.`);
       browserPath = null;
       return null;
     } finally { launching = null; }
@@ -162,11 +163,11 @@ function sendFile(req, res, f, type, cache = false) {
 const readJSON = (f, d) => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return d; } };
 
 // A note goes to the thread that made the work. A desktop thread hears it through the relay (when on);
-// any Claude Code session through its notes hook, with its next message. Work no session made
+// any Codex Code session through its notes hook, with its next message. Work no session made
 // keeps the note on the canvas, and the pin says so.
 // The relay is opt-in ("relay": true in config); without it a desktop thread's note goes by the
 // hook like any other.
-const route = (t) => (!t ? "kept" : t.startsWith("local_") && loadConfig().relay ? "relay" : "hook");
+const route = (t) => (t ? "hook" : "kept");
 
 // Every note with where it goes, said plainly on its pin. A note pinned before the canvas knew
 // whose post it was finds its session once the tool hook has tied the post to it; the notes
@@ -205,12 +206,13 @@ function withLivePosts(idx) {
   const threadOf = (s) => (s && (idx.threads.find((t) => t.id === s || (t.clis || []).includes(s))?.id || s)) || null;
   for (const s of idx.sets) if (!s.thread && byId.get(s.id)?.session) s.thread = threadOf(byId.get(s.id).session);
   for (const p of posts) {
+    if (idx.privateThreads?.includes(p.session)) continue;
     // what the config keeps private stays off the canvas, posted or not (the indexer skips it too)
     if (P.isPrivate(p.caption, p.cwd, p.topic, p.sessionTitle, p.page?.title)) continue;
     const project = P.of([p.caption], p.cwd);
-    if (p.shots?.length && !have.has(p.id)) {
+    if ((p.shots?.length || p.kind === "change") && !have.has(p.id)) {
       const before = p.before?.length ? p.before : (p.replaces && byId.get(p.replaces)?.shots) || [];
-      idx.sets.push({ id: p.id, thread: threadOf(p.session), project, at: p.at, caption: p.caption, topic: p.topic, kind: p.kind, shots: p.shots, ...(before.length ? { before } : {}), ...(p.commits ? { commits: p.commits } : {}) });
+      idx.sets.push({ id: p.id, thread: threadOf(p.session), project, at: p.at, caption: p.caption, topic: p.topic, kind: p.kind, shots: p.shots || [], ...(before.length ? { before } : {}), ...(p.commits ? { commits: p.commits } : {}) });
     }
     if (p.page && !pageHave.has(p.page.hash)) {
       const id = `post-${p.page.key}`;
@@ -257,7 +259,7 @@ async function warm() {
 }
 setTimeout(warm, 2000);
 
-// New sends get filed under topics after each index, when the command-line Claude can be
+// New sends get filed under topics after each index, when the command-line Codex can be
 // reached; until then they show as their own sittings.
 function fileInBackground(idx) {
   filing ??= fileTopics(idx).catch((e) => console.log(`[rounds] topics: ${e.message}`)).finally(() => (filing = null));
@@ -270,7 +272,7 @@ const json = (res, v, code = 200) => { res.statusCode = code; res.setHeader("con
 // server/serve.mjs uses it to run the built canvas with no Vite at all.
 // Only this machine, by its own name. A page on any website can send requests to localhost, and
 // one that renames itself to a local address (DNS rebinding) could read the canvas; notes reach
-// Claude sessions as the person's own words, so a forged one would be an instruction from a
+// Codex sessions as the person's own words, so a forged one would be an instruction from a
 // stranger. The API answers only requests addressed to a local host name, and changes only
 // from pages it served itself (or from no page at all: the MCP server, scripts, curl).
 const LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/i;
@@ -279,7 +281,7 @@ const fromHere = (req) => {
   if (req.method === "GET" || req.method === "HEAD") return true;
   const origin = req.headers.origin;
   if (!origin) return true;
-  try { return LOCAL.test(new URL(origin).host); } catch { return false; }
+  try { const url = new URL(origin); return url.protocol === "http:" && url.host === req.headers.host; } catch { return false; }
 };
 
 export async function handle(req, res, next) {
@@ -290,7 +292,7 @@ export async function handle(req, res, next) {
         try {
           if (p === "/api/index") {
             let idx = readJSON(path.join(DATA, "index.json"), null);
-            if (!idx || url.searchParams.has("fresh")) idx = await reindex();
+            if (!idx || url.searchParams.has("fresh") || (fs.existsSync(path.join(DATA, "posted")) && fs.statSync(path.join(DATA, "posted")).mtimeMs > idx.builtAt)) idx = await reindex();
             else if (Date.now() - idx.builtAt > 10 * 60e3) reindex();
             withLivePosts(idx);
             const added = readJSON(ADDED, { sets: [], pages: [] });
@@ -375,11 +377,11 @@ export async function handle(req, res, next) {
               // a session no longer on this Mac can't hear it: the note stays on the canvas
               const to = thread?.gone ? null : set.thread;
               const comment = {
-                id: crypto.randomUUID().slice(0, 8), page: c.page, hash: c.hash, x: c.x, y: c.y,
+                id: crypto.randomUUID().slice(0, 8), set: set.id, page: c.page, hash: c.hash, x: c.x, y: c.y,
                 text: c.text.trim(), at: Date.now(), thread: set.thread || null, state: to ? "queued" : "kept",
                 route: route(to), threadTitle: thread?.title || null,
               };
-              fs.writeFileSync(COMMENTS, JSON.stringify([...readJSON(COMMENTS, []), comment], null, 1));
+              updateJSON(COMMENTS, [], (list) => [...list, comment]);
               if (comment.route === "relay") {
                 fs.writeFileSync(path.join(INBOX, `${comment.id}.json`), JSON.stringify({
                   ...comment,
@@ -409,7 +411,7 @@ export async function handle(req, res, next) {
               route: route(to),
               threadTitle: thread?.title || null,
             };
-            fs.writeFileSync(COMMENTS, JSON.stringify([...readJSON(COMMENTS, []), comment], null, 1));
+            updateJSON(COMMENTS, [], (list) => [...list, comment]);
             if (comment.route === "relay") {
               fs.writeFileSync(path.join(INBOX, `${comment.id}.json`), JSON.stringify({
                 ...comment,

@@ -18,11 +18,11 @@ export type ShotSet = {
   id: string; thread: string | null; project: string; at: number; caption: string; shots: Shot[];
   topic?: string; kind?: "screens" | "page" | "change" | "push"; before?: Shot[]; commits?: Commit[]; files?: string[];
 };
-/** What a project's screens were about, across sends and days; filed by Claude. */
+/** What a project's screens were about, across sends and days; filed by Codex. */
 export type Topic = { id: string; title: string; sets: string[] };
 /** A session's changes to one project file: when each came, and the lines it added and removed. */
 export type Changed = { thread: string; repo: string; file: string; edits: [number, number, number][] };
-/** One change as Claude Code recorded it: hunks of lines, each marked " ", "+" or "-", from line o
+/** One change as Codex recorded it: hunks of lines, each marked " ", "+" or "-", from line o
  *  of the old file and line n of the new. A long change keeps its first lines; `cut` more followed. */
 export type Edit = { at: number; add: number; del: number; hunks: { o: number; n: number; lines: string[] }[]; cut?: number; created?: boolean };
 export type Index = { builtAt: number; projects: Record<string, string>; threads: Thread[]; pages: Page[]; sets: ShotSet[]; changed?: Changed[]; topics?: Record<string, Topic[]>; comments: Comment[]; previews?: boolean };
@@ -44,7 +44,7 @@ export const thumb = (hash: string) => `/api/thumb/${hash}.jpg`;
 /** A kept screen, at a width the canvas can afford, or the original. */
 export const img = (s: Shot, w?: 240 | 480 | 960 | 1600) => `/api/img/${s.hash}.${s.ext}${w ? `@${w}.jpg` : ""}`;
 export const pageSrc = (hash: string) => `/api/page/${hash}`;
-export const threadLink = (id: string) => `claude://claude.ai/epitaxy/${id}`;
+export const threadLink = (id: string) => `codex://threads/${encodeURIComponent(id)}`;
 
 export async function postComment(c: { page: string; hash: string; x: number; y: number; text: string; set?: string }): Promise<Comment> {
   const r = await fetch("/api/comments", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(c) });

@@ -1,25 +1,21 @@
 {
-  "name": "rounds-app",
-  "version": "1.1.0",
-  "description": "A local canvas of everything your Claude Code sessions make: screens, pages and pushed changes, by project and topic, with a time machine, before and after, and notes that go back to the session.",
+  "name": "rounds-codex",
+  "version": "0.1.0",
+  "description": "A local canvas of your Codex work on macOS.",
   "license": "MIT",
   "author": "Kris Puckett",
-  "homepage": "https://github.com/krispuckett/rounds#readme",
-  "repository": { "type": "git", "url": "git+https://github.com/krispuckett/rounds.git" },
-  "bugs": "https://github.com/krispuckett/rounds/issues",
   "keywords": [
-    "claude",
-    "claude-code",
+    "codex",
     "mcp",
     "canvas",
-    "design"
+    "macos"
   ],
   "type": "module",
   "engines": {
     "node": ">=20"
   },
   "bin": {
-    "rounds": "bin/rounds.mjs"
+    "rounds-codex": "bin/rounds-codex.mjs"
   },
   "files": [
     "bin",
@@ -32,12 +28,12 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite --port 4797 --strictPort",
-    "index": "node server/index-cli.mjs",
-    "topics": "node -e \"import('./server/topics.mjs').then(async (t) => { const i = JSON.parse(require('fs').readFileSync(require('path').join(require('os').homedir(), require('fs').existsSync(require('os').homedir() + '/.rounds') ? '.rounds' : '.workbench', 'index.json'), 'utf8')); console.log(await t.fileTopics(i, { log: console.log })); })\"",
+    "dev": "vite --host 127.0.0.1 --port 4798 --strictPort",
+    "index": "node bin/rounds-codex.mjs index",
     "build": "vite build",
-    "start": "node bin/rounds.mjs",
-    "eval": "node evals/e2e.mjs",
+    "start": "node bin/rounds-codex.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "tsc --noEmit",
     "prepare": "vite build"
   },
   "dependencies": {

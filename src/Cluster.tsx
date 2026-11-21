@@ -261,7 +261,7 @@ function Files({ it, far, onFile, onSession }: { it: FilesSheet; far: boolean; o
   );
 }
 
-// A push recorded with no screens (made outside Claude, so nobody captured it): its commits on
+// A push recorded with no screens (made outside Codex, so nobody captured it): its commits on
 // a sheet of paper, newest first, in the project's own place on the canvas.
 function Note({ it, far }: { it: Note; far: boolean }) {
   return (

@@ -6,5 +6,5 @@ import { api } from "./server/api.mjs";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), api()],
-  server: { watch: { ignored: ["**/.workbench/**", "**/.rounds/**"] } },
+  server: { watch: { ignored: ["**/.rounds-codex/**"] } },
 });
