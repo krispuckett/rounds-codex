@@ -1,0 +1,40 @@
+{
+ "id": "534abdfce25c7fd3",
+ "kind": "change",
+ "caption": "The Stoked Dad library: eight dispatches from 2023, an index and a page for each.",
+ "topic": "Dispatch library",
+ "cwd": "/demo/stoked-dad",
+ "at": 1789933595000,
+ "shots": [
+  {
+   "hash": "d67a60ed16a3c889",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "index"
+  },
+  {
+   "hash": "e693520b5ba093d9",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "dispatch"
+  },
+  {
+   "hash": "81b275bdeee8011e",
+   "ext": "png",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "0fea8ac",
+ "commits": [
+  {
+   "sha": "0fea8ac",
+   "subject": "Add: Stoked Dad dispatch library"
+  }
+ ],
+ "session": "demo-stoked-dad",
+ "sessionTitle": "Ocean portfolio updates"
+}

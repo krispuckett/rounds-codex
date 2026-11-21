@@ -1,0 +1,49 @@
+{
+ "id": "2bfd788522f71184",
+ "kind": "change",
+ "caption": "Twilight no longer goes black or stripes the sea, and the sun sets where it should.",
+ "topic": "Sky and sea",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1793820690000,
+ "shots": [
+  {
+   "hash": "ab0657546ad996c9",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-dusk"
+  },
+  {
+   "hash": "78df569ba26d45c3",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-sunset"
+  }
+ ],
+ "before": [
+  {
+   "hash": "29fac702f4b42826",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "sea-dusk"
+  },
+  {
+   "hash": "89141cb2d6bfd3bc",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-sunset"
+  }
+ ],
+ "range": "c3c7987",
+ "commits": [
+  {
+   "sha": "c3c7987",
+   "subject": "Fix: twilight goes black and stripes the sea; sun set by the wrong place"
+  }
+ ],
+ "session": "demo-portfolio-site",
+ "sessionTitle": "Portfolio site updates"
+}

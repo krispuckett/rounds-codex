@@ -1,0 +1,37 @@
+{
+ "id": "f09e60207327f9a9",
+ "kind": "change",
+ "caption": "Live signals, level and activity, a listening state, and a rig to try them.",
+ "topic": "Signals",
+ "cwd": "/demo/murmur",
+ "at": 1787980617000,
+ "shots": [
+  {
+   "hash": "4e19beaa18251b2d",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "signals-rig"
+  },
+  {
+   "hash": "6065058f579ed737",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "signals-rig-field"
+  }
+ ],
+ "range": "e6d65f3..b7617b4",
+ "commits": [
+  {
+   "sha": "b7617b4",
+   "subject": "Add: lab signals rig, voice demo envelope, field mount, six-state row"
+  },
+  {
+   "sha": "e6d65f3",
+   "subject": "Add: live signals (level, activity), listening state, presence family of eight reactive species"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

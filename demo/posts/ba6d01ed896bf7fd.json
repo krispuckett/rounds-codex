@@ -1,0 +1,19 @@
+{
+ "id": "ba6d01ed896bf7fd",
+ "kind": "screens",
+ "caption": "Sea 2 is the default ocean now. Windows are still the old flat panels.",
+ "topic": "Liquid Glass",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789075545000,
+ "shots": [
+  {
+   "hash": "220f7dd43dfbb19c",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "glass"
+  }
+ ],
+ "session": "demo-ocean-portfolio",
+ "sessionTitle": "Ocean portfolio updates"
+}

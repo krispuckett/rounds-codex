@@ -1,0 +1,33 @@
+{
+ "id": "0a9222e03e5914c8",
+ "kind": "change",
+ "caption": "Tilt parallax, duotone, an environment, haptics, and tools in the lab.",
+ "topic": "Glass",
+ "cwd": "/demo/murmur",
+ "at": 1788023948000,
+ "shots": [
+  {
+   "hash": "54120e81af034a4c",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "advanced"
+  },
+  {
+   "hash": "a2877ffac70db8ce",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "advanced-tone2"
+  }
+ ],
+ "range": "f3f9ecb",
+ "commits": [
+  {
+   "sha": "f3f9ecb",
+   "subject": "Add: advanced wave round one: tilt parallax, duotone, environment, haptics, lab tools, batch four heroes"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "aecad5bede927409",
+ "kind": "change",
+ "caption": "Glass Twelve, complete, with a kit for light grounds.",
+ "topic": "Glass",
+ "cwd": "/demo/murmur",
+ "at": 1788018869000,
+ "shots": [
+  {
+   "hash": "791d259d113d264a",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "light-mode"
+  }
+ ],
+ "range": "632519e",
+ "commits": [
+  {
+   "sha": "632519e",
+   "subject": "Add: Glass Twelve complete: batch three, arc refinement, light-ground kit, violet default"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

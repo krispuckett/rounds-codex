@@ -1,0 +1,15 @@
+{
+ "id": "ede35a3bf2a08d54",
+ "repo": "/demo/krispuckett.com",
+ "branch": "main",
+ "range": "a78dc9d..a78dc9d",
+ "commits": [
+  {
+   "sha": "a78dc9d",
+   "subject": "Fix: Apple Music token signing (strip pasted quotes and escaped newlines from credentials, ES256 raw r||s signature); chat route on claude-opus-5"
+  }
+ ],
+ "files": [],
+ "at": 1788752589000,
+ "summary": "Apple Music token signing, fixed"
+}

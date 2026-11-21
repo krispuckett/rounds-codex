@@ -1,0 +1,47 @@
+{
+ "id": "dbf125ba3f669f2b",
+ "kind": "change",
+ "caption": "Rohan, the Pelennor and the Witch-king, then dawn, and the road goes round again.",
+ "topic": "Rohan and the Pelennor",
+ "cwd": "/demo/the-road",
+ "at": 1795034642000,
+ "shots": [
+  {
+   "hash": "e11a04d093b56d46",
+   "ext": "png",
+   "w": 1024,
+   "h": 576,
+   "name": "8-rohan-arrows"
+  },
+  {
+   "hash": "a29cbbc3a2052734",
+   "ext": "png",
+   "w": 1024,
+   "h": 576,
+   "name": "9-pelennor-stone"
+  },
+  {
+   "hash": "11c5892470c042ca",
+   "ext": "png",
+   "w": 1024,
+   "h": 576,
+   "name": "10-witch-king"
+  },
+  {
+   "hash": "1debfdc9003ef0a5",
+   "ext": "png",
+   "w": 1024,
+   "h": 576,
+   "name": "11-dawn"
+  }
+ ],
+ "range": "f6cf991",
+ "commits": [
+  {
+   "sha": "f6cf991",
+   "subject": "Add: Rohan, the Pelennor and the Witch-king; the road goes round again"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

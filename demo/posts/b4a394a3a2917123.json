@@ -1,0 +1,37 @@
+{
+ "id": "b4a394a3a2917123",
+ "kind": "change",
+ "caption": "A motion pass: view transitions, entrances that wait for the fonts, image fades, hover and focus.",
+ "topic": "Dispatch library",
+ "cwd": "/demo/stoked-dad",
+ "at": 1789952145000,
+ "shots": [
+  {
+   "hash": "3acedafb92511a9d",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "c1287130059cbd32",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "dispatch"
+  }
+ ],
+ "range": "89600fe..6449b17",
+ "commits": [
+  {
+   "sha": "6449b17",
+   "subject": "Add: motion pass after Emil: view transitions, font-gated entrances, image fades, hover and focus polish"
+  },
+  {
+   "sha": "89600fe",
+   "subject": "Fix: footer is the Twitter link, season line and mark removed"
+  }
+ ],
+ "session": "demo-stoked-dad",
+ "sessionTitle": "Ocean portfolio updates"
+}

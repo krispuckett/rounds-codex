@@ -1,0 +1,35 @@
+{
+ "id": "978a71c6205d3c8d",
+ "kind": "change",
+ "caption": "Sharper covers and a redesigned create page.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794807622000,
+ "shots": [
+  {
+   "hash": "522c283b497a196a",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "before": [
+  {
+   "hash": "91597e5c38602b78",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "range": "e23b711",
+ "commits": [
+  {
+   "sha": "e23b711",
+   "subject": "Fix: Sharpen Top20 covers and redesign the create page"
+  }
+ ],
+ "session": "demo-top20",
+ "sessionTitle": "Top20 design polish"
+}

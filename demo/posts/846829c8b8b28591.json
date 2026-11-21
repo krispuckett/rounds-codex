@@ -1,0 +1,33 @@
+{
+ "id": "846829c8b8b28591",
+ "kind": "change",
+ "caption": "A glass family, and a gallery with a collection and an archive.",
+ "topic": "Glass",
+ "cwd": "/demo/murmur",
+ "at": 1788014853000,
+ "shots": [
+  {
+   "hash": "57209858598fda57",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "collection"
+  },
+  {
+   "hash": "d43fa018389278f0",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "collection-archive"
+  }
+ ],
+ "range": "9185180",
+ "commits": [
+  {
+   "sha": "9185180",
+   "subject": "Add: glass family scaffolding, collection/archive gallery, hero batch one round one"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

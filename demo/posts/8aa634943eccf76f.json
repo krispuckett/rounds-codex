@@ -1,0 +1,47 @@
+{
+ "id": "8aa634943eccf76f",
+ "kind": "change",
+ "caption": "Terraced planting and a river valley beside the trail.",
+ "topic": "Magnificent garden",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789226889000,
+ "shots": [
+  {
+   "hash": "53d1a944d0b8e14c",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-path"
+  },
+  {
+   "hash": "e158b833df1a6134",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-valley"
+  }
+ ],
+ "before": [
+  {
+   "hash": "ab77a138b386ae1e",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-path"
+  },
+  {
+   "hash": "6da8409f6a48e286",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-valley"
+  }
+ ],
+ "range": "73ae468",
+ "commits": [
+  {
+   "sha": "73ae468",
+   "subject": "Add: Terraced planting and a river valley beside the garden trail"
+  }
+ ]
+}

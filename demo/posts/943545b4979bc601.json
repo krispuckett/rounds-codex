@@ -1,0 +1,35 @@
+{
+ "id": "943545b4979bc601",
+ "kind": "change",
+ "caption": "Sharper spines, and a create page that lets the albums shine.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794870691000,
+ "shots": [
+  {
+   "hash": "0e2b6741e53908fe",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "before": [
+  {
+   "hash": "c0ca60c59e0539c7",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "range": "b206a4b",
+ "commits": [
+  {
+   "sha": "b206a4b",
+   "subject": "Fix: Sharpen Top20 spines and refine the create page"
+  }
+ ],
+ "session": "demo-top20",
+ "sessionTitle": "Top20 design polish"
+}

@@ -1,0 +1,35 @@
+{
+ "id": "4556966a2802429b",
+ "kind": "change",
+ "caption": "The tint is a mesh gradient now.",
+ "topic": "Stage gallery",
+ "cwd": "/demo/le-tour",
+ "at": 1783108810000,
+ "shots": [
+  {
+   "hash": "b0f35a80606b6136",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "before": [
+  {
+   "hash": "53332d0eff876fa6",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "range": "ac6ed96",
+ "commits": [
+  {
+   "sha": "ac6ed96",
+   "subject": "Fix: the tint becomes a mesh gradient"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

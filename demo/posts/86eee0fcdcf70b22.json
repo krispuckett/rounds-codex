@@ -1,0 +1,47 @@
+{
+ "id": "86eee0fcdcf70b22",
+ "kind": "change",
+ "caption": "The README's banner and its heroes.",
+ "topic": "Open source",
+ "cwd": "/demo/murmur",
+ "at": 1788033401000,
+ "shots": [
+  {
+   "hash": "87ecbe55f4c5acd6",
+   "ext": "jpg",
+   "w": 1280,
+   "h": 960,
+   "name": "readme-collection"
+  },
+  {
+   "hash": "583cc93229189809",
+   "ext": "jpg",
+   "w": 320,
+   "h": 320,
+   "name": "readme-droplet"
+  },
+  {
+   "hash": "6ee64d350e0be773",
+   "ext": "jpg",
+   "w": 320,
+   "h": 320,
+   "name": "readme-helix"
+  },
+  {
+   "hash": "8ccca6c4ab7f301f",
+   "ext": "jpg",
+   "w": 320,
+   "h": 320,
+   "name": "readme-opal"
+  }
+ ],
+ "range": "4d39f75",
+ "commits": [
+  {
+   "sha": "4d39f75",
+   "subject": "Add: README banner and hero GIFs"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "c08cd6786979694c",
+ "kind": "change",
+ "caption": "The touch pad, in the iOS Road's Game Boy style, clear of the play.",
+ "topic": "On a phone",
+ "cwd": "/demo/the-road",
+ "at": 1795037128000,
+ "shots": [
+  {
+   "hash": "8a1059176d5245c0",
+   "ext": "png",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "cb91f86",
+ "commits": [
+  {
+   "sha": "cb91f86",
+   "subject": "Add: the touch pad in the iOS Road's Game Boy style, clear of the play"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

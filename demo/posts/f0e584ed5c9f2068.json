@@ -1,0 +1,49 @@
+{
+ "id": "f0e584ed5c9f2068",
+ "kind": "change",
+ "caption": "Grid discipline, a plate of color for each dispatch, and a slot for its photo.",
+ "topic": "Dispatch library",
+ "cwd": "/demo/stoked-dad",
+ "at": 1789935894000,
+ "shots": [
+  {
+   "hash": "0406cfc2bae236cf",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "01d99b1c0cb33d57",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "dispatch"
+  }
+ ],
+ "before": [
+  {
+   "hash": "d67a60ed16a3c889",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "index"
+  },
+  {
+   "hash": "e693520b5ba093d9",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "dispatch"
+  }
+ ],
+ "range": "e13a79e",
+ "commits": [
+  {
+   "sha": "e13a79e",
+   "subject": "Fix: grid discipline, hue plates, photo slot"
+  }
+ ],
+ "session": "demo-stoked-dad",
+ "sessionTitle": "Ocean portfolio updates"
+}

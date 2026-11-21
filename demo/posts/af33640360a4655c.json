@@ -1,0 +1,39 @@
+{
+ "id": "af33640360a4655c",
+ "kind": "change",
+ "caption": "Liquid Glass for the modern era: clear glass with a bright rim and a lens edge, drawn in the ocean's own light.",
+ "topic": "Liquid Glass",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789078050000,
+ "shots": [
+  {
+   "hash": "048b26d5d548e3f3",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "glass"
+  }
+ ],
+ "before": [
+  {
+   "hash": "220f7dd43dfbb19c",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "glass"
+  }
+ ],
+ "range": "5d167dc..aa8347f",
+ "commits": [
+  {
+   "sha": "aa8347f",
+   "subject": "Add: Liquid Glass rendered in the ocean's post pass (convex squircle lensing, live frost, edge dispersion, sun-lit specular rim, darkened edge) under every chrome rect; identical in Safari, Chrome, Firefox; DOM glass steps back to ink and rim"
+  },
+  {
+   "sha": "5d167dc",
+   "subject": "Add: Liquid Glass chrome for the modern era (clear adaptive glass with specular rim and lens edge on dock, menu bar, menus, windows, palette; ink follows the water)"
+  }
+ ],
+ "session": "demo-ocean-portfolio",
+ "sessionTitle": "Ocean portfolio updates"
+}

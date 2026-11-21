@@ -1,0 +1,53 @@
+{
+ "id": "7507c10380f84a4f",
+ "kind": "change",
+ "caption": "The route traces itself on load, with a calmer line and names you can read.",
+ "topic": "Stage gallery",
+ "cwd": "/demo/le-tour",
+ "at": 1783109799000,
+ "shots": [
+  {
+   "hash": "42d0f56a29b28937",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  },
+  {
+   "hash": "2127d8fcbadd17ca",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  }
+ ],
+ "before": [
+  {
+   "hash": "b0f35a80606b6136",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  },
+  {
+   "hash": "fef79e81e9192d41",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  }
+ ],
+ "range": "7365eb2..b996fdf",
+ "commits": [
+  {
+   "sha": "b996fdf",
+   "subject": "Add: the trace on load, a calmer line, readable names"
+  },
+  {
+   "sha": "7365eb2",
+   "subject": "Fix: the fold lines melt"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

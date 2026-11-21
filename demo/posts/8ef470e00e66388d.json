@@ -1,0 +1,33 @@
+{
+ "id": "8ef470e00e66388d",
+ "kind": "change",
+ "caption": "The race: stage winners, standings, and a living maillot jaune.",
+ "topic": "The race",
+ "cwd": "/demo/le-tour",
+ "at": 1783259885000,
+ "shots": [
+  {
+   "hash": "546bd631264a2026",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "cdd54a4dcfea2e00",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "96bb3c2",
+ "commits": [
+  {
+   "sha": "96bb3c2",
+   "subject": "Add: the race, stage winners, standings, a living maillot jaune"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

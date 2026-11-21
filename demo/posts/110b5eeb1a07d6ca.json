@@ -1,0 +1,31 @@
+{
+ "id": "110b5eeb1a07d6ca",
+ "kind": "change",
+ "caption": "The Praxis site, first pass.",
+ "topic": "Landing page",
+ "cwd": "/demo/heypraxis.app",
+ "at": 1783994403000,
+ "shots": [
+  {
+   "hash": "bce8e795f2ca6d1a",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "home"
+  },
+  {
+   "hash": "2b64249add693fd4",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "f6c5936",
+ "commits": [
+  {
+   "sha": "f6c5936",
+   "subject": "Add: Praxis Soul site"
+  }
+ ]
+}

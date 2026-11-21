@@ -1,0 +1,24 @@
+{
+ "id": "baed7b8d49f87264",
+ "kind": "change",
+ "caption": "The interactive CD collection, published at /top20.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794684147000,
+ "shots": [
+  {
+   "hash": "28fec8d929ee0210",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "top20"
+  }
+ ],
+ "range": "02022d5",
+ "commits": [
+  {
+   "sha": "02022d5",
+   "subject": "Add: Publish the interactive CD collection at top20"
+  }
+ ]
+}

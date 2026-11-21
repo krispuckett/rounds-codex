@@ -1,0 +1,51 @@
+{
+ "id": "f8ae12b25bd8a121",
+ "kind": "change",
+ "caption": "A clearer site: your iPhone, now your cycling computer.",
+ "topic": "Landing page",
+ "cwd": "/demo/heypraxis.app",
+ "at": 1784088274000,
+ "shots": [
+  {
+   "hash": "0bb55a1933f493a3",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "20abd50eb303b995",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "bce8e795f2ca6d1a",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "home"
+  },
+  {
+   "hash": "2b64249add693fd4",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "47b242d..0b8a584",
+ "commits": [
+  {
+   "sha": "0b8a584",
+   "subject": "Add: clear Praxis site vision"
+  },
+  {
+   "sha": "47b242d",
+   "subject": "Fix: polish Praxis launch site"
+  }
+ ]
+}

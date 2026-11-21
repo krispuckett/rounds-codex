@@ -1,0 +1,39 @@
+{
+ "id": "17ba65c4c3bea8cb",
+ "kind": "change",
+ "caption": "The create page, rebuilt as a numbered list.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794866011000,
+ "shots": [
+  {
+   "hash": "c0ca60c59e0539c7",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "before": [
+  {
+   "hash": "522c283b497a196a",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "range": "5986fce..22c5b0b",
+ "commits": [
+  {
+   "sha": "22c5b0b",
+   "subject": "Fix: Rebuild the Top20 create page as a numbered list"
+  },
+  {
+   "sha": "5986fce",
+   "subject": "Fix: Search every CD format for real Top20 spines"
+  }
+ ],
+ "session": "demo-top20",
+ "sessionTitle": "Top20 design polish"
+}

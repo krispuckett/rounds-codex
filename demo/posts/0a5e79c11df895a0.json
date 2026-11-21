@@ -1,0 +1,44 @@
+{
+ "id": "0a5e79c11df895a0",
+ "kind": "change",
+ "caption": "A pinned studio, a live row of states, Liquid Glass chrome.",
+ "topic": "Lab",
+ "cwd": "/demo/murmur",
+ "at": 1787957726000,
+ "shots": [
+  {
+   "hash": "7bd6d754e36e9a10",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-pinned"
+  },
+  {
+   "hash": "c17af46069c1e6f2",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-glass-states"
+  },
+  {
+   "hash": "5ce7e08e1790318b",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-recolored"
+  }
+ ],
+ "range": "4edcba2..10afd39",
+ "commits": [
+  {
+   "sha": "10afd39",
+   "subject": "Add: pinned studio, live state row, Liquid Glass chrome, relative-drag rows, warm stage"
+  },
+  {
+   "sha": "4edcba2",
+   "subject": "Add: playful gestures per species, varied state treatments (slow idle, open thinking)"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

@@ -1,0 +1,33 @@
+{
+ "id": "f6b2405a86265686",
+ "kind": "change",
+ "caption": "Rohan's arrows give warning now, and Shadowfax stays white in its sun.",
+ "topic": "Rohan and the Pelennor",
+ "cwd": "/demo/the-road",
+ "at": 1795036709000,
+ "shots": [
+  {
+   "hash": "778cf7acce459ada",
+   "ext": "png",
+   "w": 912,
+   "h": 342,
+   "name": "12-rohan-horse"
+  },
+  {
+   "hash": "14d9f6befc0c2d0f",
+   "ext": "png",
+   "w": 1056,
+   "h": 342,
+   "name": "13-rohan-arrows"
+  }
+ ],
+ "range": "2686928",
+ "commits": [
+  {
+   "sha": "2686928",
+   "subject": "Fix: Rohan's arrows give warning, and Shadowfax stays white in its sun"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

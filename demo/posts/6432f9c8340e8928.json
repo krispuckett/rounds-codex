@@ -1,0 +1,49 @@
+{
+ "id": "6432f9c8340e8928",
+ "kind": "change",
+ "caption": "A shareable standings card, and a pass on contrast and focus.",
+ "topic": "The race",
+ "cwd": "/demo/le-tour",
+ "at": 1783405632000,
+ "shots": [
+  {
+   "hash": "9438dbe0418c0eba",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "abb6715658c1f1c4",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "546bd631264a2026",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "cdd54a4dcfea2e00",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "8274066",
+ "commits": [
+  {
+   "sha": "8274066",
+   "subject": "Add: shareable standings card + a11y contrast/focus pass"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

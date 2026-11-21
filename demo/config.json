@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "key": "krisos",
+      "name": "krispuckett.com",
+      "match": [
+        "krispuckett.com"
+      ]
+    },
+    {
+      "key": "road",
+      "name": "The Road",
+      "match": [
+        "the-road"
+      ]
+    },
+    {
+      "key": "letour",
+      "name": "Le Tour",
+      "match": [
+        "le-tour"
+      ]
+    },
+    {
+      "key": "stoked",
+      "name": "Stoked Dad",
+      "match": [
+        "stoked-dad"
+      ]
+    },
+    {
+      "key": "murmur",
+      "name": "Murmur",
+      "match": [
+        "murmur"
+      ]
+    },
+    {
+      "key": "praxis",
+      "name": "Praxis",
+      "match": [
+        "heypraxis.app"
+      ]
+    }
+  ],
+  "private": [],
+  "folders": false,
+  "home": "Home",
+  "port": 4795
+}

@@ -1,0 +1,393 @@
+[
+ {
+  "id": "2cdca5c6",
+  "page": "shot-220f7dd43dfbb19c",
+  "hash": "220f7dd43dfbb19c",
+  "x": 0.5,
+  "y": 0.2,
+  "text": "Clear adaptive glass like the new macOS 27",
+  "at": 1789077180000,
+  "thread": "demo-ocean-portfolio",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Ocean portfolio updates",
+  "reply": {
+   "text": "Liquid Glass chrome for the modern era (clear adaptive glass with specular rim and lens edge on dock, menu bar, menus, windows, palette; ink follows the water).",
+   "at": 1789078050000
+  }
+ },
+ {
+  "id": "22f4fcf3",
+  "page": "shot-29fac702f4b42826",
+  "hash": "29fac702f4b42826",
+  "x": 0.45,
+  "y": 0.6,
+  "text": "strange artifacts when I scroll through time on sunrise and sunset.",
+  "at": 1793812320000,
+  "thread": "demo-portfolio-site",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Portfolio site updates",
+  "reply": {
+   "text": "Twilight goes black and stripes the sea; sun set by the wrong place.",
+   "at": 1793820690000
+  }
+ },
+ {
+  "id": "878bd876",
+  "page": "shot-ab0657546ad996c9",
+  "hash": "ab0657546ad996c9",
+  "x": 0.42,
+  "y": 0.3,
+  "text": "strange banding on sky and the sunset feels way too purple/fuchsia?",
+  "at": 1793820960000,
+  "thread": "demo-portfolio-site",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Portfolio site updates",
+  "reply": {
+   "text": "Banded twilight sky and a fuchsia sunset.",
+   "at": 1793838622000
+  }
+ },
+ {
+  "id": "0792f5b7",
+  "page": "shot-91597e5c38602b78",
+  "hash": "91597e5c38602b78",
+  "x": 0.17,
+  "y": 0.155,
+  "text": "I'm more worried about very quick fixes to the actual design elements of the top20/create page. I don't love the overall ui.",
+  "at": 1794805980000,
+  "thread": "demo-top20",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Top20 design polish",
+  "reply": {
+   "text": "Sharpen Top20 covers and redesign the create page.",
+   "at": 1794807622000
+  }
+ },
+ {
+  "id": "eacc8baf",
+  "page": "shot-91597e5c38602b78",
+  "hash": "91597e5c38602b78",
+  "x": 0.42,
+  "y": 0.245,
+  "text": "make the input bar 1/2 the width.",
+  "at": 1794806400000,
+  "thread": "demo-top20",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Top20 design polish",
+  "reply": {
+   "text": "Sharpen Top20 covers and redesign the create page.",
+   "at": 1794807622000
+  }
+ },
+ {
+  "id": "ea7838bf",
+  "page": "shot-c0ca60c59e0539c7",
+  "hash": "c0ca60c59e0539c7",
+  "x": 0.81,
+  "y": 0.62,
+  "text": "I don't think we need this background at all. like the albums shine here.",
+  "at": 1794869520000,
+  "thread": "demo-top20",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Top20 design polish",
+  "reply": {
+   "text": "Sharpen Top20 spines and refine the create page.",
+   "at": 1794870691000
+  }
+ },
+ {
+  "id": "55f9ffd5",
+  "page": "shot-c0ca60c59e0539c7",
+  "hash": "c0ca60c59e0539c7",
+  "x": 0.81,
+  "y": 0.835,
+  "text": "get rid of the black horizontal line under albums too please",
+  "at": 1794869550000,
+  "thread": "demo-top20",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Top20 design polish",
+  "reply": {
+   "text": "Sharpen Top20 spines and refine the create page.",
+   "at": 1794870691000
+  }
+ },
+ {
+  "id": "08149763",
+  "page": "shot-fc94355295b8ee01",
+  "hash": "fc94355295b8ee01",
+  "x": 0.42,
+  "y": 0.62,
+  "text": "Feels good needs more polish and refinement. Needs to feel pixel perfect and the running motion should be incredible.",
+  "at": 1795030320000,
+  "thread": "demo-web-game",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Shadowfax web game",
+  "reply": {
+   "text": "Shadowfax holds still on screen and the ground is real earth.",
+   "at": 1795031244000
+  }
+ },
+ {
+  "id": "3d34bdf5",
+  "page": "shot-37490d23ae840923",
+  "hash": "37490d23ae840923",
+  "x": 0.5,
+  "y": 0.45,
+  "text": "on 1-3 the big jump after the first nazgul feels pretty hard",
+  "at": 1795033080000,
+  "thread": "demo-web-game",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Shadowfax web game",
+  "reply": {
+   "text": "1-3's big leap after the first Nazgul has a runway.",
+   "at": 1795033186000
+  }
+ },
+ {
+  "id": "67671309",
+  "page": "shot-c16295ecc3077b09",
+  "hash": "c16295ecc3077b09",
+  "x": 0.55,
+  "y": 0.5,
+  "text": "those big jumps on any level like on weather top 2-3 are hard to get right.",
+  "at": 1795033500000,
+  "thread": "demo-web-game",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Shadowfax web game",
+  "reply": {
+   "text": "2-3's first big leap has a runway, and a gap report tool.",
+   "at": 1795033604000
+  }
+ },
+ {
+  "id": "0ee7b990",
+  "page": "shot-21205856b3f603cb",
+  "hash": "21205856b3f603cb",
+  "x": 0.5,
+  "y": 0.3,
+  "text": "music on weathertop is awful.",
+  "at": 1795035960000,
+  "thread": "demo-web-game",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Shadowfax web game",
+  "reply": {
+   "text": "A new Weathertop loop for the web, a moonlit ride instead of the dirge.",
+   "at": 1795036056000
+  }
+ },
+ {
+  "id": "1c666c98",
+  "page": "shot-e11a04d093b56d46",
+  "hash": "e11a04d093b56d46",
+  "x": 0.35,
+  "y": 0.62,
+  "text": "Rohan is so hard with the arrows and the color between Shadowfax and the field feels off",
+  "at": 1795036440000,
+  "thread": "demo-web-game",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Shadowfax web game",
+  "reply": {
+   "text": "Rohan's arrows give warning, and Shadowfax stays white in its sun.",
+   "at": 1795036709000
+  }
+ },
+ {
+  "id": "ec1a1a10",
+  "page": "shot-968cec5120dcb981",
+  "hash": "968cec5120dcb981",
+  "x": 0.5,
+  "y": 0.45,
+  "text": "not at all there yet. Still has a bunch of weird issues with the border, the background. the line isn't smooth. the text is hard to read weird flashing on the screen. Shader needs to be far more liquid and advanced.",
+  "at": 1783103280000,
+  "thread": "demo-le-tour",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Le Tour web",
+  "reply": {
+   "text": "Smoother line, silkier liquid-metal curtain, readable labels.",
+   "at": 1783104080000
+  }
+ },
+ {
+  "id": "390f1747",
+  "page": "shot-53332d0eff876fa6",
+  "hash": "53332d0eff876fa6",
+  "x": 0.5,
+  "y": 0.55,
+  "text": "cant have hard lines. It's a flowing smooth mesh gradient, liquidy, beautiful, not this.",
+  "at": 1783108680000,
+  "thread": "demo-le-tour",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Le Tour web",
+  "reply": {
+   "text": "The tint becomes a mesh gradient.",
+   "at": 1783108810000
+  }
+ },
+ {
+  "id": "07282478",
+  "page": "shot-b0f35a80606b6136",
+  "hash": "b0f35a80606b6136",
+  "x": 0.45,
+  "y": 0.5,
+  "text": "brother look at those fold lines. how can we fix that.",
+  "at": 1783109040000,
+  "thread": "demo-le-tour",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Le Tour web",
+  "reply": {
+   "text": "The fold lines melt.",
+   "at": 1783109182000
+  }
+ },
+ {
+  "id": "9bb37254",
+  "page": "shot-42d0f56a29b28937",
+  "hash": "42d0f56a29b28937",
+  "x": 0.72,
+  "y": 0.6,
+  "text": "the finish needs a bead too on all of them",
+  "at": 1783110000000,
+  "thread": "demo-le-tour",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Le Tour web",
+  "reply": {
+   "text": "A bead at the finish.",
+   "at": 1783110032000
+  }
+ },
+ {
+  "id": "f1db2d4d",
+  "page": "shot-d67a60ed16a3c889",
+  "hash": "d67a60ed16a3c889",
+  "x": 0.17,
+  "y": 0.33,
+  "text": "Better but more color. I dig the fusion with the images and space. Alignment feels all jacked up even if it's Swiss style.",
+  "at": 1789935300000,
+  "thread": "demo-stoked-dad",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Ocean portfolio updates",
+  "reply": {
+   "text": "Grid discipline, hue plates, photo slot.",
+   "at": 1789935894000
+  }
+ },
+ {
+  "id": "06c4c068",
+  "page": "shot-0406cfc2bae236cf",
+  "hash": "0406cfc2bae236cf",
+  "x": 0.3,
+  "y": 0.5,
+  "text": "alignment still feels so freaking weird. Color choices are strange I guess.",
+  "at": 1789936500000,
+  "thread": "demo-stoked-dad",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Ocean portfolio updates",
+  "reply": {
+   "text": "Two-edge grid on columns 1 and 3, single amber accent, dark plates, capped width.",
+   "at": 1789936685000
+  }
+ },
+ {
+  "id": "938989f2",
+  "page": "shot-dc6a2f56a7f072f7",
+  "hash": "dc6a2f56a7f072f7",
+  "x": 0.22,
+  "y": 0.89,
+  "text": "Getting closer, still working on images. this is weird layout to me especially the \"Yo\" section",
+  "at": 1789936800000,
+  "thread": "demo-stoked-dad",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Ocean portfolio updates",
+  "reply": {
+   "text": "Greeting and sign-off flow in the essay column, item spacing.",
+   "at": 1789936888000
+  }
+ },
+ {
+  "id": "effa9af7",
+  "page": "shot-ffeab081a867a1dc",
+  "hash": "ffeab081a867a1dc",
+  "x": 0.5,
+  "y": 0.25,
+  "text": "Let's make the colors of them initially easier to see. Add more playful dynamics. the state machine needs varied states like idle should be slow, thinking should have more motion and color.",
+  "at": 1787955900000,
+  "thread": "demo-murmur",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Murmur",
+  "reply": {
+   "text": "Playful gestures per species, varied state treatments (slow idle, open thinking).",
+   "at": 1787956710000
+  }
+ },
+ {
+  "id": "581a1291",
+  "page": "shot-2a52cf696af2d18d",
+  "hash": "2a52cf696af2d18d",
+  "x": 0.5,
+  "y": 0.2,
+  "text": "1. colors are too hard to read and parse. 2. Need each shader to be easy to understand. What makes the example I initially gave great is that it has shape and is easy to parse.",
+  "at": 1787960160000,
+  "thread": "demo-murmur",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Murmur",
+  "reply": {
+   "text": "Figure law and value hierarchy across all 32 species.",
+   "at": 1787961076000
+  }
+ },
+ {
+  "id": "a6558a36",
+  "page": "shot-4e19beaa18251b2d",
+  "hash": "4e19beaa18251b2d",
+  "x": 0.5,
+  "y": 0.18,
+  "text": "Can we redo all of them? They just don't feel high quality yet. All new concepts. We are trying to make a library to share out.",
+  "at": 1788012000000,
+  "thread": "demo-murmur",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Murmur",
+  "reply": {
+   "text": "Glass family scaffolding, collection/archive gallery, hero batch one round one.",
+   "at": 1788014853000
+  }
+ },
+ {
+  "id": "564779b8",
+  "page": "shot-791d259d113d264a",
+  "hash": "791d259d113d264a",
+  "x": 0.5,
+  "y": 0.2,
+  "text": "Okay. Keep adding more options, more advanced options, more cool options. Make this feel legendary.",
+  "at": 1788022140000,
+  "thread": "demo-murmur",
+  "state": "sent",
+  "route": "hook",
+  "threadTitle": "Murmur",
+  "reply": {
+   "text": "Advanced wave round one: tilt parallax, duotone, environment, haptics, lab tools, batch four heroes.",
+   "at": 1788023948000
+  }
+ }
+]

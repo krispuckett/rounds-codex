@@ -1,0 +1,35 @@
+{
+ "id": "379377de35bc2d67",
+ "kind": "change",
+ "caption": "A window behind another now recedes, with a progressive blur and a dim.",
+ "topic": "Liquid Glass",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789080296000,
+ "shots": [
+  {
+   "hash": "4ade71355c79987c",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "glass"
+  }
+ ],
+ "before": [
+  {
+   "hash": "048b26d5d548e3f3",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "glass"
+  }
+ ],
+ "range": "9d3bb6c",
+ "commits": [
+  {
+   "sha": "9d3bb6c",
+   "subject": "Fix: background windows recede with progressive blur and dim; front window frosts what sits behind it harder"
+  }
+ ],
+ "session": "demo-ocean-portfolio",
+ "sessionTitle": "Ocean portfolio updates"
+}

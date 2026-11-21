@@ -1,0 +1,55 @@
+{
+ "id": "9af329f014e4c1e8",
+ "kind": "change",
+ "caption": "The site now runs in eras: 1984, Aqua, Leopard and iOS 7, each a whole shell of its own.",
+ "topic": "Eras",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1788375972000,
+ "shots": [
+  {
+   "hash": "33630e343fc20d6c",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "era-1984"
+  },
+  {
+   "hash": "e60ca2f669302fc7",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "era-2001"
+  },
+  {
+   "hash": "4ead4525f5a0db41",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "era-2007"
+  },
+  {
+   "hash": "444fe6d8e59ecbd6",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "era-2013"
+  }
+ ],
+ "range": "0ba8239..3dba91b",
+ "commits": [
+  {
+   "sha": "3dba91b",
+   "subject": "Add: iOS 7 era shell (full-bleed home screen, layered app zoom, translucent nav)"
+  },
+  {
+   "sha": "a651f6e",
+   "subject": "Add: Leopard era shell (reflective shelf dock, unified windows, translucent menu bar)"
+  },
+  {
+   "sha": "0ba8239",
+   "subject": "Add: Aqua era shell (pinstripes, gel traffic lights, shelf dock)"
+  }
+ ],
+ "session": "demo-ocean-portfolio",
+ "sessionTitle": "Ocean portfolio updates"
+}

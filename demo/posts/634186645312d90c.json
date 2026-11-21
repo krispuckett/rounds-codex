@@ -1,0 +1,61 @@
+{
+ "id": "634186645312d90c",
+ "kind": "change",
+ "caption": "The Murmur Lab: a gallery of thinking indicators, a studio for each, and an export card.",
+ "topic": "Lab",
+ "cwd": "/demo/murmur",
+ "at": 1787951501000,
+ "shots": [
+  {
+   "hash": "6c971f389d9aa4b5",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "gallery"
+  },
+  {
+   "hash": "97d89b85580d28e9",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "gallery-signal"
+  },
+  {
+   "hash": "b346772c9b9808d4",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-eddy"
+  },
+  {
+   "hash": "29e4739b94fc9f52",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-panel"
+  },
+  {
+   "hash": "6a5cd55096da5cdf",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "export-card"
+  },
+  {
+   "hash": "ffeab081a867a1dc",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "studio-light"
+  }
+ ],
+ "range": "45605bd",
+ "commits": [
+  {
+   "sha": "45605bd",
+   "subject": "Add: Murmur Lab app (gallery, studio, export card) with -openStyle deep link"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

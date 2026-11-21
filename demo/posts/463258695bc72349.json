@@ -1,0 +1,49 @@
+{
+ "id": "463258695bc72349",
+ "kind": "change",
+ "caption": "The twilight sky without its bands, and a sunset that isn't fuchsia.",
+ "topic": "Sky and sea",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1793838622000,
+ "shots": [
+  {
+   "hash": "4ad35083571e9d06",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-dusk"
+  },
+  {
+   "hash": "c090c3510b86a43d",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-sunset"
+  }
+ ],
+ "before": [
+  {
+   "hash": "ab0657546ad996c9",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-dusk"
+  },
+  {
+   "hash": "78df569ba26d45c3",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-sunset"
+  }
+ ],
+ "range": "9537a91",
+ "commits": [
+  {
+   "sha": "9537a91",
+   "subject": "Fix: banded twilight sky and a fuchsia sunset"
+  }
+ ],
+ "session": "demo-portfolio-site",
+ "sessionTitle": "Portfolio site updates"
+}

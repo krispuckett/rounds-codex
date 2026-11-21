@@ -1,0 +1,34 @@
+{
+ "id": "0d434a69b8d7d19d",
+ "kind": "change",
+ "caption": "Spine images export in the original jewel-case format.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794804616000,
+ "shots": [
+  {
+   "hash": "91597e5c38602b78",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  }
+ ],
+ "range": "664c5d5..8dc5cc2",
+ "commits": [
+  {
+   "sha": "8dc5cc2",
+   "subject": "Add: Export Top20 spine images in the original jewel-case format"
+  },
+  {
+   "sha": "74ec068",
+   "subject": "Fix: Unblock album collections and add handwritten mix titles"
+  },
+  {
+   "sha": "664c5d5",
+   "subject": "Add: Build shareable song mixes and improve artist album search"
+  }
+ ],
+ "session": "demo-top20",
+ "sessionTitle": "Top20 design polish"
+}

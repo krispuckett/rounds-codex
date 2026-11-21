@@ -1,0 +1,33 @@
+{
+ "id": "3c9c7780553fb8c2",
+ "kind": "change",
+ "caption": "Grab the sea to look around. A day and night slider, the clock moves the sun, and a moon over the water.",
+ "topic": "Sky and sea",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1793811709000,
+ "shots": [
+  {
+   "hash": "c04c8952629b414a",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-noon"
+  },
+  {
+   "hash": "29fac702f4b42826",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "sea-dusk"
+  }
+ ],
+ "range": "b639435",
+ "commits": [
+  {
+   "sha": "b639435",
+   "subject": "Add: grab the sea, a day and night slider, the clock moves the sun, a moon over the water"
+  }
+ ],
+ "session": "demo-portfolio-site",
+ "sessionTitle": "Portfolio site updates"
+}

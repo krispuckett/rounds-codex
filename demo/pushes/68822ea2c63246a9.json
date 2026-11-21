@@ -1,0 +1,19 @@
+{
+ "id": "68822ea2c63246a9",
+ "repo": "/demo/murmur",
+ "branch": "main",
+ "range": "fab437f..84642c4",
+ "commits": [
+  {
+   "sha": "84642c4",
+   "subject": "Fix: squares instead of pow on signed bases in horizon and flame"
+  },
+  {
+   "sha": "fab437f",
+   "subject": "Add: five new glass heroes: galaxy, lava, horizon, flame, plume"
+  }
+ ],
+ "files": [],
+ "at": 1793808135000,
+ "summary": "Five new glass heroes: galaxy, lava, horizon, flame, plume"
+}

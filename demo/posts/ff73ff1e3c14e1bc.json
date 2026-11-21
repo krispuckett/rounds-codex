@@ -1,0 +1,26 @@
+{
+ "id": "ff73ff1e3c14e1bc",
+ "kind": "change",
+ "caption": "The link preview: a leap in the Shire.",
+ "topic": "Launch",
+ "cwd": "/demo/the-road",
+ "at": 1795044517000,
+ "shots": [
+  {
+   "hash": "6a9169b50a580325",
+   "ext": "png",
+   "w": 1200,
+   "h": 630,
+   "name": "og-image"
+  }
+ ],
+ "range": "1d32335",
+ "commits": [
+  {
+   "sha": "1d32335",
+   "subject": "Add: the link preview, a leap in the Shire and a ride through the worlds"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

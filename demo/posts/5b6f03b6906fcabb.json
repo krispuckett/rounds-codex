@@ -1,0 +1,38 @@
+{
+ "id": "5b6f03b6906fcabb",
+ "kind": "change",
+ "caption": "The Magnificent garden, a walk you scroll through.",
+ "topic": "Magnificent garden",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789059702000,
+ "shots": [
+  {
+   "hash": "7225b89257afb0d6",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "garden"
+  },
+  {
+   "hash": "ab77a138b386ae1e",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-path"
+  },
+  {
+   "hash": "6da8409f6a48e286",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "garden-valley"
+  }
+ ],
+ "range": "994651e",
+ "commits": [
+  {
+   "sha": "994651e",
+   "subject": "Add: Magnificent garden at /magnificent2"
+  }
+ ]
+}

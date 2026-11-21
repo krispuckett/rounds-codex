@@ -1,0 +1,37 @@
+{
+ "id": "62db8bd56b77f8c2",
+ "kind": "change",
+ "caption": "The desktop as it stands: notes open, the dock back to its approved lift.",
+ "topic": "Homepage",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1789421796000,
+ "shots": [
+  {
+   "hash": "671795e83b340fd2",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "home"
+  },
+  {
+   "hash": "bc95046bc7e9c101",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "home-phone"
+  }
+ ],
+ "range": "2d84c1e..c172e13",
+ "commits": [
+  {
+   "sha": "c172e13",
+   "subject": "Fix: modern menu bar wears a plain circle instead of the Apple mark; dock returns to the approved line glyphs; Time Machine timeline readable on the light window (accent and node tokens remapped); windows open in place instead of flying in from the corner, and restore after minimize clears the dock offset"
+  },
+  {
+   "sha": "2d84c1e",
+   "subject": "Fix: dock hover back to the approved per-icon lift, magnification removed"
+  }
+ ],
+ "session": "demo-ocean-portfolio",
+ "sessionTitle": "Ocean portfolio updates"
+}

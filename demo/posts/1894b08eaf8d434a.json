@@ -1,0 +1,61 @@
+{
+ "id": "1894b08eaf8d434a",
+ "kind": "change",
+ "caption": "Shadowfax holds still on screen and the ground is real earth. The pits, the ledges, the beacon, a leap and a skid.",
+ "topic": "World 1",
+ "cwd": "/demo/the-road",
+ "at": 1795031244000,
+ "shots": [
+  {
+   "hash": "b059f4b72ead6758",
+   "ext": "png",
+   "w": 888,
+   "h": 432,
+   "name": "1-pits"
+  },
+  {
+   "hash": "fc63dd03e4536eb4",
+   "ext": "png",
+   "w": 1568,
+   "h": 432,
+   "name": "2-raised-ground"
+  },
+  {
+   "hash": "21641ab13d9b6445",
+   "ext": "png",
+   "w": 928,
+   "h": 402,
+   "name": "3-ledges"
+  },
+  {
+   "hash": "6ba83af721fde419",
+   "ext": "png",
+   "w": 968,
+   "h": 402,
+   "name": "4-beacon"
+  },
+  {
+   "hash": "37490d23ae840923",
+   "ext": "png",
+   "w": 1520,
+   "h": 1520,
+   "name": "5-leap"
+  },
+  {
+   "hash": "cfa06304dce72e98",
+   "ext": "png",
+   "w": 1520,
+   "h": 1064,
+   "name": "6-skid"
+  }
+ ],
+ "range": "7a7fb2e",
+ "commits": [
+  {
+   "sha": "7a7fb2e",
+   "subject": "Fix: Shadowfax holds still on screen and the ground is real earth"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

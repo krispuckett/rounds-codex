@@ -1,0 +1,33 @@
+{
+ "id": "17482668a7dbe8c5",
+ "kind": "change",
+ "caption": "A scattered-light sky, clouds, and a faster, truer sea.",
+ "topic": "Sky and sea",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1793758922000,
+ "shots": [
+  {
+   "hash": "785946597c2aa834",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-noon"
+  },
+  {
+   "hash": "b65af735450ac7d4",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "sea-sunset"
+  }
+ ],
+ "range": "d92b7c1",
+ "commits": [
+  {
+   "sha": "d92b7c1",
+   "subject": "Add: a scattered-light sky, clouds, and a faster, truer sea"
+  }
+ ],
+ "session": "demo-portfolio-site",
+ "sessionTitle": "Portfolio site updates"
+}

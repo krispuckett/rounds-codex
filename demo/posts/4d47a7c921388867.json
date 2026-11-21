@@ -1,0 +1,61 @@
+{
+ "id": "4d47a7c921388867",
+ "kind": "change",
+ "caption": "Kris's tuned defaults, a saturation dial, and true black.",
+ "topic": "Stage gallery",
+ "cwd": "/demo/le-tour",
+ "at": 1783108405000,
+ "shots": [
+  {
+   "hash": "fef79e81e9192d41",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "53332d0eff876fa6",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "before": [
+  {
+   "hash": "3b50091109570fed",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "968cec5120dcb981",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "range": "1c16ca6..c409ec7",
+ "commits": [
+  {
+   "sha": "c409ec7",
+   "subject": "Add: Kris's tuned defaults, a saturation dial, true black"
+  },
+  {
+   "sha": "ad3f119",
+   "subject": "Fix: the curtain becomes the iOS Metal shader, verbatim"
+  },
+  {
+   "sha": "1ecd0b0",
+   "subject": "Add: RTT fluid curtain, dialkit lab, background parity, gallery nav"
+  },
+  {
+   "sha": "1c16ca6",
+   "subject": "Fix: smoother line, silkier liquid-metal curtain, readable labels"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

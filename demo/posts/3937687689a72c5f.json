@@ -1,0 +1,49 @@
+{
+ "id": "3937687689a72c5f",
+ "kind": "change",
+ "caption": "Bilbo and Frodo, Gandalf the Grey and the White, Aragorn, Legolas and Gimli on the road.",
+ "topic": "World 1",
+ "cwd": "/demo/the-road",
+ "at": 1795044986000,
+ "shots": [
+  {
+   "hash": "ff116071846ca093",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "title"
+  },
+  {
+   "hash": "ea6513ee246aded2",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "play"
+  }
+ ],
+ "before": [
+  {
+   "hash": "4c3de4eba4ef6380",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "title"
+  },
+  {
+   "hash": "fc94355295b8ee01",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "play"
+  }
+ ],
+ "range": "0b79ac4",
+ "commits": [
+  {
+   "sha": "0b79ac4",
+   "subject": "Add: Bilbo and Frodo, Gandalf the Grey and the White, Aragorn, Legolas and Gimli"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

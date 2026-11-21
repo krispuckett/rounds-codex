@@ -1,0 +1,37 @@
+{
+ "id": "3da867534244a8b4",
+ "kind": "change",
+ "caption": "Make your own Top 20: a simpler creator, and spines lettered so they travel.",
+ "topic": "Top 20",
+ "cwd": "/demo/krispuckett.com",
+ "at": 1794786343000,
+ "shots": [
+  {
+   "hash": "748b844aa29dbab6",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "top20-create"
+  },
+  {
+   "hash": "518fce83205c313f",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "top20-phone"
+  }
+ ],
+ "range": "09bcee7..ba2c640",
+ "commits": [
+  {
+   "sha": "ba2c640",
+   "subject": "Fix: Simplify the Top 20 creator and render portable spine lettering"
+  },
+  {
+   "sha": "09bcee7",
+   "subject": "Add: Personal Top 20 collections with artwork matching and share links"
+  }
+ ],
+ "session": "demo-top20",
+ "sessionTitle": "Top20 design polish"
+}

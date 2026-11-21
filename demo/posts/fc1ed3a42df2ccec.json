@@ -1,0 +1,43 @@
+{
+ "id": "fc1ed3a42df2ccec",
+ "kind": "change",
+ "caption": "Sky behind Safari's bars, clear glass, bigger keys, and pills that say what they do.",
+ "topic": "On a phone",
+ "cwd": "/demo/the-road",
+ "at": 1795043500000,
+ "shots": [
+  {
+   "hash": "274ffd9403001952",
+   "ext": "png",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "8a1059176d5245c0",
+   "ext": "png",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "e877a4d..88a8822",
+ "commits": [
+  {
+   "sha": "88a8822",
+   "subject": "Fix: sky behind Safari's bars, clear glass, bigger keys, pills that say what they do"
+  },
+  {
+   "sha": "395fc7e",
+   "subject": "Fix: the touch pad follows each finger, and Safari can't zoom"
+  },
+  {
+   "sha": "e877a4d",
+   "subject": "Fix: closer in on a phone, less earth, the pad low, the game under Safari's bars"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

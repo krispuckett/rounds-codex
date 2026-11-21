@@ -1,0 +1,35 @@
+{
+ "id": "86ee6336d0948b04",
+ "kind": "change",
+ "caption": "A bead at the finish of every stage.",
+ "topic": "Stage gallery",
+ "cwd": "/demo/le-tour",
+ "at": 1783110032000,
+ "shots": [
+  {
+   "hash": "782bf7616e164d3c",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "before": [
+  {
+   "hash": "42d0f56a29b28937",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  }
+ ],
+ "range": "801fe24",
+ "commits": [
+  {
+   "sha": "801fe24",
+   "subject": "Add: a bead at the finish"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

@@ -1,0 +1,15 @@
+{
+ "id": "3e8cc166a1f1b01a",
+ "repo": "/demo/krispuckett.com",
+ "branch": "main",
+ "range": "5afe888..5afe888",
+ "commits": [
+  {
+   "sha": "5afe888",
+   "subject": "Remove: Terminal app and its chat API route from every shell; drop the Anthropic SDK dependency"
+  }
+ ],
+ "files": [],
+ "at": 1788806324000,
+ "summary": "The Terminal app and its chat route, removed"
+}

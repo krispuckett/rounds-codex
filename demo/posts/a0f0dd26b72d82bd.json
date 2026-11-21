@@ -1,0 +1,28 @@
+{
+ "id": "a0f0dd26b72d82bd",
+ "kind": "change",
+ "caption": "Praxis Supply, a concept store: kit in the app's colors.",
+ "topic": "Praxis Supply",
+ "cwd": "/demo/heypraxis.app",
+ "at": 1784353117000,
+ "shots": [
+  {
+   "hash": "7e29d08518bd59cb",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "supply"
+  }
+ ],
+ "range": "f63c596..160cf5a",
+ "commits": [
+  {
+   "sha": "160cf5a",
+   "subject": "Add: refine Praxis Supply collection"
+  },
+  {
+   "sha": "f63c596",
+   "subject": "Add: Praxis Supply concept store"
+  }
+ ]
+}

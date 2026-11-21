@@ -1,0 +1,23 @@
+{
+ "id": "e3863d6eb4438ba8",
+ "repo": "/demo/the-road",
+ "branch": "main",
+ "range": "f629e8a..e2e7df1",
+ "commits": [
+  {
+   "sha": "e2e7df1",
+   "subject": "Fix: keep Vercel's local env file out of git"
+  },
+  {
+   "sha": "e7aa81c",
+   "subject": "Add: a leaderboard, signed with three initials"
+  },
+  {
+   "sha": "f629e8a",
+   "subject": "Fix: 4-3 opens with a ride in, not the hardest of the Pelennor at once"
+  }
+ ],
+ "files": [],
+ "at": 1795037482000,
+ "summary": "A leaderboard, signed with three initials"
+}

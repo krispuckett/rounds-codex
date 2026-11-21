@@ -1,0 +1,31 @@
+{
+ "id": "f3ee3fe23c89b78b",
+ "repo": "/demo/le-tour",
+ "branch": "main",
+ "range": "a5fd0fa..8dd0370",
+ "commits": [
+  {
+   "sha": "8dd0370",
+   "subject": "Fix: correct 2026 team map from live field + more GC names"
+  },
+  {
+   "sha": "2c95039",
+   "subject": "Fix: show \"s.t.\" for same-time GC riders and drop bogus \"Leads by, \" hero"
+  },
+  {
+   "sha": "ade0afb",
+   "subject": "Fix: 10-min refresh window so a just-finished stage appears fast"
+  },
+  {
+   "sha": "65d1192",
+   "subject": "Add: full live scrape, jerseys and stage winners auto-update too, nothing hand-kept"
+  },
+  {
+   "sha": "a5fd0fa",
+   "subject": "Add: live /api/standings function, GC + yellow jersey auto-update from letour.fr"
+  }
+ ],
+ "files": [],
+ "at": 1783266982000,
+ "summary": "Standings, jerseys and stage winners update themselves from the live race"
+}

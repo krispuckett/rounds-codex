@@ -1,0 +1,40 @@
+{
+ "id": "30a0a411784bb264",
+ "kind": "change",
+ "caption": "Le Tour 2026: all 21 stages as liquid-metal routes, in a gallery.",
+ "topic": "Stage gallery",
+ "cwd": "/demo/le-tour",
+ "at": 1783100304000,
+ "shots": [
+  {
+   "hash": "3b50091109570fed",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "968cec5120dcb981",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "stage"
+  },
+  {
+   "hash": "c1443862dfc81c54",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "9876646",
+ "commits": [
+  {
+   "sha": "9876646",
+   "subject": "Add: Le Tour 2026, liquid-metal 3D route gallery"
+  }
+ ],
+ "session": "demo-le-tour",
+ "sessionTitle": "Le Tour web"
+}

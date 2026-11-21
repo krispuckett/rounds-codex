@@ -1,0 +1,30 @@
+{
+ "id": "c9db45f872799ea0",
+ "kind": "change",
+ "caption": "Every state gets its own dials.",
+ "topic": "Lab",
+ "cwd": "/demo/murmur",
+ "at": 1787959602000,
+ "shots": [
+  {
+   "hash": "2a52cf696af2d18d",
+   "ext": "jpg",
+   "w": 1206,
+   "h": 2622,
+   "name": "per-state-editing"
+  }
+ ],
+ "range": "b1a3e01..fc51490",
+ "commits": [
+  {
+   "sha": "fc51490",
+   "subject": "Add: per-state dial editing, bottom safe-area fix, -openState rig hook"
+  },
+  {
+   "sha": "b1a3e01",
+   "subject": "Add: per-state parameter designs, in-shader success flash and responding drive, motion quality pass"
+  }
+ ],
+ "session": "demo-murmur",
+ "sessionTitle": "Murmur"
+}

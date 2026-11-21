@@ -1,0 +1,33 @@
+{
+ "id": "7d47ff4bfff5c1c4",
+ "kind": "change",
+ "caption": "Shadowfax's Road for the web: World 1, the Shire, playable.",
+ "topic": "World 1",
+ "cwd": "/demo/the-road",
+ "at": 1795028875000,
+ "shots": [
+  {
+   "hash": "4c3de4eba4ef6380",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "title"
+  },
+  {
+   "hash": "fc94355295b8ee01",
+   "ext": "png",
+   "w": 2880,
+   "h": 1800,
+   "name": "play"
+  }
+ ],
+ "range": "d5aef2f",
+ "commits": [
+  {
+   "sha": "d5aef2f",
+   "subject": "Add: Shadowfax's Road for the web, World 1 playable"
+  }
+ ],
+ "session": "demo-web-game",
+ "sessionTitle": "Shadowfax web game"
+}

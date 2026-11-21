@@ -1,0 +1,15 @@
+{
+ "id": "83fe310051159195",
+ "repo": "/demo/murmur",
+ "branch": "main",
+ "range": "e6eb3a5..e6eb3a5",
+ "commits": [
+  {
+   "sha": "e6eb3a5",
+   "subject": "Add: MIT license, concise README, AGENTS.md for open source"
+  }
+ ],
+ "files": [],
+ "at": 1788032954000,
+ "summary": "Open source: an MIT license, a short README, and AGENTS.md"
+}

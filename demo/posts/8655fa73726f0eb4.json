@@ -1,0 +1,71 @@
+{
+ "id": "8655fa73726f0eb4",
+ "kind": "change",
+ "caption": "Photographs on the plates, for the index and all eight dispatches.",
+ "topic": "Dispatch library",
+ "cwd": "/demo/stoked-dad",
+ "at": 1789940598000,
+ "shots": [
+  {
+   "hash": "9a2c0b8b466f8c36",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "d526e4cb7c7a8028",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "dispatch"
+  },
+  {
+   "hash": "d0f6f95f46dbee27",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "2f2d235caaf61487",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "dc6a2f56a7f072f7",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "dispatch"
+  },
+  {
+   "hash": "a21566b06e63b626",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "6143a07..3a9dead",
+ "commits": [
+  {
+   "sha": "3a9dead",
+   "subject": "Add: photographic plates for the index and all eight dispatches"
+  },
+  {
+   "sha": "9058700",
+   "subject": "Fix: quiet hover, off-white ground, serif greeting and lead line, index note removed"
+  },
+  {
+   "sha": "6143a07",
+   "subject": "Fix: greeting and sign-off flow in the essay column, item spacing"
+  }
+ ],
+ "session": "demo-stoked-dad",
+ "sessionTitle": "Ocean portfolio updates"
+}

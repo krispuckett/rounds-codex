@@ -1,0 +1,67 @@
+{
+ "id": "0793d984858ab01c",
+ "kind": "change",
+ "caption": "A two-edge grid on columns 1 and 3, a single amber accent, dark plates, a capped width.",
+ "topic": "Dispatch library",
+ "cwd": "/demo/stoked-dad",
+ "at": 1789936685000,
+ "shots": [
+  {
+   "hash": "2f2d235caaf61487",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "dc6a2f56a7f072f7",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "dispatch"
+  },
+  {
+   "hash": "a21566b06e63b626",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "0406cfc2bae236cf",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "index"
+  },
+  {
+   "hash": "01d99b1c0cb33d57",
+   "ext": "jpg",
+   "w": 2160,
+   "h": 1350,
+   "name": "dispatch"
+  },
+  {
+   "hash": "a21566b06e63b626",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "1ffdff1..2ee8f7c",
+ "commits": [
+  {
+   "sha": "2ee8f7c",
+   "subject": "Fix: two-edge grid on columns 1 and 3, single amber accent, dark plates, capped width"
+  },
+  {
+   "sha": "1ffdff1",
+   "subject": "Fix: phone plate numeral on column 1, wider index deck column"
+  }
+ ],
+ "session": "demo-stoked-dad",
+ "sessionTitle": "Ocean portfolio updates"
+}

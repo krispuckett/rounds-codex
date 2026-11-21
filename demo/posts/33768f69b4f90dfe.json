@@ -1,0 +1,55 @@
+{
+ "id": "33768f69b4f90dfe",
+ "kind": "change",
+ "caption": "The landing page, rebuilt around the route and the app's real screens.",
+ "topic": "Landing page",
+ "cwd": "/demo/heypraxis.app",
+ "at": 1790868914000,
+ "shots": [
+  {
+   "hash": "fdcb3621cf44c4c0",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "d2fe07eb49815240",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "before": [
+  {
+   "hash": "1987055f602d9b61",
+   "ext": "jpg",
+   "w": 2880,
+   "h": 1800,
+   "name": "home"
+  },
+  {
+   "hash": "72c0319ed648e18c",
+   "ext": "jpg",
+   "w": 1179,
+   "h": 1977,
+   "name": "phone"
+  }
+ ],
+ "range": "4cf02a4..09afb5c",
+ "commits": [
+  {
+   "sha": "09afb5c",
+   "subject": "Fix: hero ribbon ported from the app's Route3D curtain"
+  },
+  {
+   "sha": "1a5388a",
+   "subject": "Hero: the app's word morph, and a ride you scroll"
+  },
+  {
+   "sha": "4cf02a4",
+   "subject": "Rebuild the landing page around the route and the app's real screens"
+  }
+ ]
+}
